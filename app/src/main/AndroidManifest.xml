@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.digitalclassroom15.digitalclassroom">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SlashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".navActivity.AdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".navActivity.UsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".navActivity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".adminPanel.AdminProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".adminPanel.UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".adminPanel.AdminViewActivity" />
+        <activity android:name=".userPanel.UserViewActivity" />
+    </application>
+
+</manifest>

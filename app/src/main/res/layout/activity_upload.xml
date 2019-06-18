@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/uploadTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Upload Home Work"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/uploadTV"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/classTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/view"
+                android:layout_marginStart="13dp"
+                android:padding="4dp"
+                android:text="Select Class:"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/subjectSelectTV"
+                android:layout_toEndOf="@+id/classTV"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/sectionET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:hint="Enter Section Here"
+                android:inputType="text"
+                android:padding="5dp"
+                android:layout_alignTop="@+id/spinner"
+                android:layout_alignEnd="@+id/subjectSelectTV" />
+
+
+            <EditText
+                android:id="@+id/subjectSelectTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/classTV"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="Enter Subject Name...."
+                android:inputType="text"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/button_choose_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/broderview"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Upload Image"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/uploadTV" />
+
+            <EditText
+                android:id="@+id/edit_text_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button_choose_image"
+                android:layout_alignBottom="@+id/button_choose_image"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/button_choose_image"
+                android:background="@drawable/edit_text_style"
+                android:hint="Enter Title Here..."
+                android:inputType="text"
+                android:padding="5dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@drawable/broderviewmax"
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                android:scaleType="fitXY" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/image_view" />
+
+            <EditText
+                android:id="@+id/lastdateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button_upload"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/button_upload"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toStartOf="@+id/button_upload"
+                android:background="@drawable/edit_text_style"
+                android:hint="Submission Date | dd/mm/yy"
+                android:inputType="text"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/button_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/progress_bar"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/btn_style"
+                android:text="Upload"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "543180076621",
+    "firebase_url": "https://digitalclassroom-7220b.firebaseio.com",
+    "project_id": "digitalclassroom-7220b",
+    "storage_bucket": "digitalclassroom-7220b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543180076621:android:0e06649ffadb7dac",
+        "android_client_info": {
+          "package_name": "com.digitalclassroom15.digitalclassroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543180076621-ibojn54jkgrpi8sfpfv5j9pioklek4pb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalclassroom15.digitalclassroom",
+            "certificate_hash": "17e7c39730b52ee1d1a2acd46bc0d3c3c1c32b3e"
+          }
+        },
+        {
+          "client_id": "543180076621-2ipp02q4huq9a9hjf33grnqf3klisivk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYxwWK9ICEkv72jyu5Fhdk0gxBtfRfOBU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543180076621-2ipp02q4huq9a9hjf33grnqf3klisivk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

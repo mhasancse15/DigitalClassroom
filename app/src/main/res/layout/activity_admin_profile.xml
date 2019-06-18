@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".adminPanel.AdminProfileActivity"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/broderviewmax"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="53dp"
+        android:layout_alignTop="@+id/user_profile_photo"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <!--MAIN BODY-->
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="18dp"
+                android:gravity="center_horizontal"
+                android:text="Welcome To Admin Panel"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:onClick="goToUpload"
+                    android:id="@+id/uploadBtn"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Upload Home Work"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:background="@drawable/btn_style"
+                    android:drawableRight="@drawable/ic_upload"
+                    android:elevation="5dp"
+                  />
+
+                <Button
+                    android:id="@+id/ViewBtn"
+                    android:onClick="goToView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_style"
+                    android:drawableRight="@drawable/ic_view"
+                    android:elevation="5dp"
+                    android:text="View Home Work"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/logoutBtn"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:background="@drawable/btn_style"
+                    android:drawableRight="@drawable/ic_logout"
+                    android:elevation="5dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/broderview"
+        android:elevation="15dp"
+        android:src="@drawable/admin"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
